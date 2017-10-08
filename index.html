@@ -3,6 +3,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <style>
 iframe{width:100%}
 
@@ -14,7 +15,13 @@ font-family: "Quicksand";
 </head>
 
 <body>
-<h2>open reference data</h2>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-link" href="sec_Data">Data</a>
+</nav>
+
+<h1> open reference data </h1>
+
+<h2 id="sec_Data">Data</h2>
 
 <iframe id="app_frame" src="https://bchngeapps.shinyapps.io/ord_mvp/" style="border: 2px solid red; width: 100%;"></iframe>
 
@@ -24,6 +31,8 @@ font-family: "Quicksand";
 <script type="text/javascript">
 	iFrameResize({heightCalculationMethod: "lowestElement"});
 </script>
+
+<h2 id="sec_Mission"> Mission </h2>
 
 <h2>About Us</h2>
 <h3>
@@ -66,5 +75,6 @@ The Security Master Dataset defines the “tradable universe” within a trading
 As organizations source and build their security master database, data quality and management become key areas to focus on. High quality data is critical to the trade process workflow. Having sound data management processes will help firms keep costs down and data quality high. 
 </p>
 
+<h2 id="sec_Contact"> Contact </h2>
 </body>
 </html>
