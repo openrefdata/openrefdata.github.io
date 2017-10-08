@@ -2,18 +2,14 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    var app_height = $("div.dataTables_scrollBody").height();
-	alert(app_height);
-});
-</script>
+<script>iFrameResize({log:true}, '#app_frame')</script>
+<style>iframe{width:100%}</style>
 </head>
+
 <body>
 <h2>open reference data</h2>
 
-<iframe src="https://bchngeapps.shinyapps.io/ord_mvp/" style="border: 2px solid red; width: 100%; height: 2000px;"></iframe>
-
+<iframe id="app_frame" src="https://bchngeapps.shinyapps.io/ord_mvp/" style="border: 2px solid red; width: 100%; height: 2000px;"></iframe>
 
 </body>
 </html>
