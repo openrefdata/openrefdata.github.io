@@ -2,12 +2,6 @@
 <html>
 <head>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="iframe-resizer/js/iframeResizer.js"></script>
-
-<script type="text/javascript">
-	$('#app_frame').iFrameResize( [{log:true}]);
-</script>
 
 <style>iframe{width:100%}</style>
 </head>
@@ -16,6 +10,13 @@
 <h2>open reference data</h2>
 
 <iframe id="app_frame" src="https://bchngeapps.shinyapps.io/ord_mvp/" style="border: 2px solid red; width: 100%;"></iframe>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="iframe-resizer/js/iframeResizer.min.js"></script>
+
+<script type="text/javascript">
+	iFrameResize({heightCalculationMethod: "lowestElement"});
+</script>
 
 </body>
 </html>
