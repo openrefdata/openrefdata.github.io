@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <style>
 iframe{
-	width:100%;
+	min-width: 100%;
+	max-width: 100%;
 }
 
 body {
@@ -31,33 +32,11 @@ h3 {
 	font-size: 36px;
 }
 
-#mainContainer{
-	overflow: hidden;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-}
-
-#iframeContainer{
-	position: relative;
-	padding-bottom: 56%;
-	padding-top: 35px;
-	height:0;
-	overflow:hidden;
-}
-
-#iframeContainer iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 </style>
 </head>
 
 <body>
-<div id="mainContainer">
+
 <div class="jumbotron jumbotron-fluid" id="titleBox">
 	<div class="container">
 		<h1 class="display-3"> open reference data </h1>
@@ -73,10 +52,8 @@ h3 {
 	<a class="navbar-brand" href="#sec_About">About ORD</a>
 	<a class="navbar-brand" href="#sec_Contact">Contact Us</a>
 </nav>
-
-<div id = 'iframeContainer'>
 <iframe id="app_frame" src="https://bchngeapps.shinyapps.io/ord_mvp/" style="border:0; width: 100%;"></iframe>
-</div>
+
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -145,6 +122,6 @@ As organizations source and build their security master database, data quality a
 		<h1 class="display-6">Contact us</h1>
 	</div>
 </div>
-</div>
+
 </body>
 </html>
