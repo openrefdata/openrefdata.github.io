@@ -53,7 +53,7 @@ body,
 	background-image:rgba(255,255,2,0.3) !important;
 }
 
-#titleBox {
+#main {
 	background-image: url('https://static.pexels.com/photos/310479/pexels-photo-310479.jpeg');
 	color: #000000;
 	background-size: cover;
@@ -75,7 +75,7 @@ body,
 
 
 
-<div class="jumbotron jumbotron-fluid" id="titleBox">
+<div class="jumbotron jumbotron-fluid" id="main">
 	<div class="container">
 		<h1 class="display-3"> open reference data </h1>
 		<p class = "lead">
@@ -87,30 +87,19 @@ body,
 <iframe id="app_frame" src="https://bchngeapps.shinyapps.io/ord_mvp/" style="border:0; width: 100%;"></iframe>
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light navbar-right justify-content-end">
-	<a class="navbar-brand" href="#titleBox" data-target="#app_frame">Search</a>
-	<a class="navbar-brand" href="#Mission" data-target="#Mission">Mission</a>
+	<a class="navbar-brand" href="#main" data-target="#app_frame">Search</a>
 	<a class="navbar-brand" href="#About">About ORD</a>
 	<a class="navbar-brand" href="#Contact">Contact Us</a>
 </nav>
 
-
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="iframe-resizer/js/iframeResizer.min.js"></script>
-
 
 <script type="text/javascript">
 	iFrameResize({heightCalculationMethod: "lowestElement"});
 </script>
 
-<div class="jumbotron" id="Mission">
-	<div class="container">
-		<h1 class="display-6">Mission</h1>
-	</div>
-</div>
-
-
-<div class="jumbotron" id="About">
+<div class="page-header" id="About">
 	<div class="container">
 		<h1 class="display-6">About Us</h1>
 	</div>
@@ -156,7 +145,7 @@ The Security Master Dataset defines the “tradable universe” within a trading
 As organizations source and build their security master database, data quality and management become key areas to focus on. High quality data is critical to the trade process workflow. Having sound data management processes will help firms keep costs down and data quality high. 
 </p>
 
-<div class="jumbotron" id="Contact">
+<div class="page-header" id="Contact">
 	<div class="container">
 		<h1 class="display-6">Contact us</h1>
 	</div>
